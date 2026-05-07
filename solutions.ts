@@ -21,3 +21,8 @@ const checkType = (x: StringOrNumber): string => {
     return "Wrong Input!";
   }
 };
+
+// Solution of Problem 4
+const getProperty = <T, K extends keyof T>(userInfo: T, specificInfo: K) => {
+  return userInfo[specificInfo];
+};
